@@ -8,4 +8,11 @@ module.exports = {
   plugins: [
     require('daisyui'),
   ],
+  purge: {
+    options: {
+      safelist: [
+        /data-theme$/,
+      ]
+    }
+  }
 }
