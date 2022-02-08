@@ -1,15 +1,23 @@
+import Menu from './components/Menu';
 import './App.css';
+
+function Header() {
+  return (
+    <header className="mt-4">
+      <h1 className="text-center title fw-bold">WeatherBoard</h1>
+    </header>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="hero bg-base-200 min-h-screen">
-        <div>
-          <h1 className="mb-5 text-5xl font-bold">WeatherBoard</h1>
-          <button className="btn btn-primary rounded-none shadow shadow-gray-400">Use my Location</button>
-        </div>
-      </header>
+    <>
+    <Menu />
+    <div className="container">
+      
+      <Header />
     </div>
+    </>
   );
 }
 
