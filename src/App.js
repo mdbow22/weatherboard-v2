@@ -1,4 +1,5 @@
 import Menu from './components/Menu';
+import WeatherProvider from './utils/WeatherContext';
 import './App.css';
 
 function Header() {
@@ -12,11 +13,12 @@ function Header() {
 function App() {
   return (
     <>
-    <Menu />
-    <div className="container">
-      
-      <Header />
-    </div>
+    <WeatherProvider>
+      <Menu />
+      <div className="container">
+        <Header />
+      </div>
+    </WeatherProvider>
     </>
   );
 }
