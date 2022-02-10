@@ -1,4 +1,5 @@
 import Menu from './components/Menu';
+import Hero from './components/Hero';
 import WeatherProvider from './utils/WeatherContext';
 import './App.css';
 
@@ -16,7 +17,7 @@ function App() {
     <WeatherProvider>
       <Menu />
       <div className="container">
-        <Header />
+        <Hero />
       </div>
     </WeatherProvider>
     </>
